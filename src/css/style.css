@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    color:  #9DECF9;
+}
+
+.header{
+    margin-top: 20px;
+}
+
+.searchDiv{
+    margin: 20px;
+}
+
+#search{
+    width: 525px;
+    height: 50px;
+    background: none;
+    border: 1px solid #9DECF9;
+    color: #9DECF9;
+    text-indent: 10px;
+}
+
+ #search:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+label{
+    display: block;
+    color: #9DECF9;
+}
+
+#add{
+    width: 75px;
+    height: 50px;
+    background: #9DECF9;
+    border: none;
+
+}
+
+
+#add:hover{
+    cursor: pointer;
+    background-color: white;
+}
+.wrapper{
+    min-height: 100vh;
+    height: fit-content;
+    min-width: 100vw;
+    width: fit-content;
+    background-color: #0a192f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#clearAll{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #2b3e5a;
+    height: 40px;
+    border: none;
+    color: white;
+    width: 70px;
+    margin: 5px;
+}
+
+
+#clearAll:hover{
+    cursor: pointer;
+}
+
+.taskListsHeader{
+    display: flex;
+    justify-content: space-between;
+    width: 605px;
+    background: #9DECF9;
+    border: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.textPlaceHolder{
+    color: black;
+    margin: 10px;
+}
+
+
+.taskListsArea{
+    width: 605px;
+    border: 1px solid #9DECF9;
+    min-height: 100px;
+    max-height: 470px;
+    overflow: auto;
+}
+
+.taskListsArea::-webkit-scrollbar{
+    width: 1vh;
+}
+
+.taskListsArea::-webkit-scrollbar-thumb{
+    background-color: #9DECF9;
+    border-radius: 1px;
+
+}
+.taskListsArea::-webkit-scrollbar-track{
+    background-color: #0a192f;
+    margin: 10px;
+}
+
+label{
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.editInput{
+    display: none;
+    margin-left: 20px;
+    width: 150px;
+    height: 40px;
+    text-indent: 5px;
+    background: none;
+    color: inherit;
+    outline: 1px solid #9DECF9;
+
+    
+}
+
+input[type=text].editInput:focus{
+    
+    border: none;
+    color: inherit;
+}
+
+
+#cancelButton, #saveButton{
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    width: 70px;
+}
+
+#cancelButton:hover, #saveButton:hover{
+    cursor: pointer;
+}
+
+#cancelButton{
+    background: white;
+
+}
+
+#saveButton{
+    background: red;
+    color: white;
+}
+
+.taskHeaderText{
+    margin: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px
+
+
+}
+
+.itemContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 10px 0px;
+    height: 50px;
+    background: none;
+    color: #9DECF9;
+    
+}
+
+.editItemContainer{
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content:space-between;
+    margin: 10px 0px;
+    height: 50px;
+    background: none;
+    color: #9DECF9;
+    display: none;
+}
+.item{
+    margin-left: 20px;
+}
+
+.itemContainer:hover{
+    background: #9DECF9;
+    color: black;
+}
+input[type=checkbox]{
+    display: inline;
+}
+
+#edit, #delete{
+    font-size: 20px;
+    
+
+}
+#edit:hover, #delete:hover{
+    cursor: pointer;
+}
+
+
+
+.textPlaceHolder, .newList{
+    color: rgba(255, 255, 255, .7);
+}
+
+#editValue{
+    margin-left: 20px;
+    border: 1px solid black;
+    height: 50px;
+    text-indent: 20px;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100px;
+}
+
+
+
+@keyframes shake {
+
+    0% {
+        transform: translate(0);
+    }
+    20%,
+    40%,
+    60%,
+    80%{
+        transform: translate(.8em);
+    }
+
+    10%, 
+    30%,
+    50%{
+        transform: translate(-.2em);
+    }
+
+    70%,
+    100%{
+        transform: translate(0);
+    }
+}
