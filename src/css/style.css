@@ -290,12 +290,7 @@ a{
     letter-spacing: 5px;
 }
 
-
-
 @media (min-width: 320px) and (max-width: 480px){
-  
-
-
     .searchDiv{
         width: 100%;
     }
@@ -319,7 +314,6 @@ a{
 
 }
 @keyframes shake {
-
     0% {
         transform: translate(0);
     }
