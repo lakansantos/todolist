@@ -50,7 +50,7 @@ label{
     background-color: white;
 }
 .wrapper{
-    min-height: 100vh;
+    min-height: 90vh;
     height: fit-content;
     min-width: 100vw;
     width: fit-content;
@@ -101,7 +101,7 @@ label{
     width: 605px;
     border: 1px solid #9DECF9;
     min-height: 100px;
-    max-height: 470px;
+    max-height: 400px;
     overflow: auto;
 }
 
@@ -123,7 +123,6 @@ label{
     color: white;
     display: flex;
     align-items: center;
-    cursor: pointer;
 }
 
 .editInput{
@@ -244,7 +243,138 @@ input[type=checkbox]{
 }
 
 
+footer{
+    width: 100vw;
+    height: 15vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9DECF9;
+    position: sticky;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 50px;
 
+}
+
+
+
+footer:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.footerWrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.par{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.heartLogo{
+
+    margin: 5px;
+
+}
+
+.ulLogos{
+    display: flex;
+    list-style-type: none;
+}
+
+li{
+    margin: 0px 10px;
+}
+
+.logo{
+    font-size: 25px;
+
+}
+
+a{
+    color: inherit;
+}
+
+.name{
+    letter-spacing: 5px;
+}
+
+
+@media (max-width: 720px) and (min-width: 410px) {
+    .wrapper{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .searchDiv{
+        width: 100%;
+    }
+
+    #search{
+        width: 80%;
+    }
+
+    #add{
+        width: calc(100% - 86.5% -10%);
+    }
+
+    .taskLists{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .taskListsHeader, .taskListsArea{
+        width: inherit;
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 409px){
+    .wrapper{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .searchDiv{
+        width: 100%;
+    }
+
+    #search{
+        width: 75%;
+    }
+
+
+
+    .taskLists{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .taskListsHeader, .taskListsArea{
+        width: inherit;
+    }
+
+}
 @keyframes shake {
 
     0% {
