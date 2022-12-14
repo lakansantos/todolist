@@ -302,39 +302,6 @@ a{
 }
 
 
-@media (max-width: 720px) and (min-width: 410px) {
-    .wrapper{
-        width: 100%;
-    }
-
-    .container{
-        width: 100%;
-    }
-
-    .searchDiv{
-        width: 100%;
-    }
-
-    #search{
-        width: 80%;
-    }
-
-    #add{
-        width: calc(100% - 86.5% -10%);
-    }
-
-    .taskLists{
-        width: 100%;
-    }
-    .container{
-        width: 100%;
-    }
-    .taskListsHeader, .taskListsArea{
-        width: inherit;
-    }
-
-}
-
 
 @media (min-width: 320px) and (max-width: 409px){
     .wrapper{
