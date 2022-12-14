@@ -44,7 +44,6 @@ label{
 
 }
 
-
 #add:hover{
     cursor: pointer;
     background-color: white;
@@ -86,16 +85,12 @@ label{
     height: 50px;
     display: flex;
     align-items: center;
-
 }
-
-
 
 .textPlaceHolder{
     color: black;
     margin: 10px;
 }
-
 
 .taskListsArea{
     width: 605px;
@@ -133,9 +128,7 @@ label{
     text-indent: 5px;
     background: none;
     color: inherit;
-    outline: 1px solid #9DECF9;
-
-    
+    outline: 1px solid #9DECF9;  
 }
 
 input[type=text].editInput:focus{
@@ -174,9 +167,7 @@ input[type=text].editInput:focus{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 50px
-
-
+    margin-bottom: 50px;
 }
 
 .itemContainer{
@@ -188,7 +179,6 @@ input[type=text].editInput:focus{
     height: 50px;
     background: none;
     color: #9DECF9;
-    
 }
 
 .editItemContainer{
@@ -216,8 +206,6 @@ input[type=checkbox]{
 
 #edit, #delete{
     font-size: 20px;
-    
-
 }
 #edit:hover, #delete:hover{
     cursor: pointer;
@@ -239,6 +227,7 @@ input[type=checkbox]{
     gap: 20px;
     width: 100px;
 }
+
 
 footer{
     width: 100vw;
@@ -301,6 +290,37 @@ a{
     letter-spacing: 5px;
 }
 
+@media (max-width: 720px) and (min-width: 410px) {
+    .wrapper{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .searchDiv{
+        width: 100%;
+    }
+
+    #search{
+        width: 80%;
+    }
+
+    #add{
+        width: calc(100% - 86.5% -10%);
+    }
+
+    .taskLists{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .taskListsHeader, .taskListsArea{
+        width: inherit;
+    }
+}
 
 
 @media (min-width: 320px) and (max-width: 409px){
@@ -319,6 +339,9 @@ a{
     #search{
         width: 75%;
     }
+
+
+
     .taskLists{
         width: 100%;
     }
