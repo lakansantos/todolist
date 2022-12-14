@@ -29,7 +29,7 @@ h1 {
  #search:focus{
     outline: none;
     border: 1px solid white;
-}
+}   
 
 label{
     display: block;
@@ -290,25 +290,18 @@ a{
     letter-spacing: 5px;
 }
 
-@media (max-width: 720px) and (min-width: 410px) {
-    .wrapper{
-        width: 100%;
-    }
 
-    .container{
-        width: 100%;
-    }
+
+@media (min-width: 320px) and (max-width: 480px){
+  
+
 
     .searchDiv{
         width: 100%;
     }
 
     #search{
-        width: 80%;
-    }
-
-    #add{
-        width: calc(100% - 86.5% -10%);
+        width: calc(100% - 80px);
     }
 
     .taskLists{
@@ -320,36 +313,8 @@ a{
     .taskListsHeader, .taskListsArea{
         width: inherit;
     }
-}
-
-
-@media (min-width: 320px) and (max-width: 409px){
-    .wrapper{
-        width: 100%;
-    }
-
-    .container{
-        width: 100%;
-    }
-
-    .searchDiv{
-        width: 100%;
-    }
-
-    #search{
-        width: 75%;
-    }
-
-
-
-    .taskLists{
-        width: 100%;
-    }
-    .container{
-        width: 100%;
-    }
-    .taskListsHeader, .taskListsArea{
-        width: inherit;
+    footer{
+        height: 20vh;
     }
 
 }
