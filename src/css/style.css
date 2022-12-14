@@ -223,8 +223,6 @@ input[type=checkbox]{
     cursor: pointer;
 }
 
-
-
 .textPlaceHolder, .newList{
     color: rgba(255, 255, 255, .7);
 }
@@ -242,7 +240,6 @@ input[type=checkbox]{
     width: 100px;
 }
 
-
 footer{
     width: 100vw;
     height: 15vh;
@@ -256,10 +253,7 @@ footer{
     bottom: 0;
     left: 0;
     padding: 50px;
-
 }
-
-
 
 footer:hover{
     cursor: pointer;
@@ -283,9 +277,7 @@ footer:hover{
     text-align: center;
 }
 .heartLogo{
-
     margin: 5px;
-
 }
 
 .ulLogos{
@@ -299,7 +291,6 @@ li{
 
 .logo{
     font-size: 25px;
-
 }
 
 a{
@@ -361,9 +352,6 @@ a{
     #search{
         width: 75%;
     }
-
-
-
     .taskLists{
         width: 100%;
     }
