@@ -16,11 +16,13 @@ add.addEventListener('click', function(){
     displayLists();
     input.value = ''
     input.focus();
+
 })
 
 
 input.addEventListener('keydown', e=>{
     if(e.key === 'Enter'){
+
         addItem();
         displayLists();
         input.value = ''
@@ -74,7 +76,9 @@ function displayLists() {
         textPlaceHolder.innerText = 'Your tasks will be listed here...'
         taskLists = [];
      
-    } else{
+    } 
+
+    else{
         textPlaceHolder.display = 'none'
         textPlaceHolder.innerText = ''
         taskLists = listItems;
@@ -103,7 +107,9 @@ function displayLists() {
         clear.style.display = 'none'
         if(taskLists.length > 1){
             clear.style.display = 'flex';
-        } else{
+        } 
+        
+        else{
             clear.style.display = 'none'
         }
         
