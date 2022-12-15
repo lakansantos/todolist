@@ -11,14 +11,11 @@ let clear = document.querySelector('#clearAll');
 clear.style.display = 'none'
 
 add.addEventListener('click', function(){
-
+    
     addItem();
     displayLists();
-
     input.value = ''
     input.focus();
-  
-    
 })
 
 
@@ -26,7 +23,6 @@ input.addEventListener('keydown', e=>{
     if(e.key === 'Enter'){
         addItem();
         displayLists();
-        
         input.value = ''
   
     } 
@@ -63,9 +59,7 @@ function addItem(){
 
     if(listItems === null){
         taskLists = [];
-    }
-
-    else{
+    } else{
         taskLists = listItems
     }
 
@@ -85,9 +79,7 @@ function displayLists() {
         textPlaceHolder.innerText = 'Your tasks will be listed here...'
         taskLists = [];
      
-    }
-  
-    else{
+    } else{
         textPlaceHolder.display = 'none'
         textPlaceHolder.innerText = ''
         taskLists = listItems;
@@ -116,8 +108,7 @@ function displayLists() {
         clear.style.display = 'none'
         if(taskLists.length > 1){
             clear.style.display = 'flex';
-        }
-        else{
+        } else{
             clear.style.display = 'none'
         }
         
@@ -191,7 +182,6 @@ editText = (index) => {
         taskLists.splice(index, 1, inputEdit[index].value)
         console.log(inputEdit[index].value)
         localStorage.setItem('listItems', JSON.stringify(taskLists));
-       
         displayLists();
     });
 
