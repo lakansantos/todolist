@@ -38,7 +38,6 @@ function addItem(){
     taskLists.push(val);
 
     localStorage.setItem('listItems', JSON.stringify(taskLists));
- 
     }
 
    
@@ -62,10 +61,6 @@ function addItem(){
     } else{
         taskLists = listItems
     }
-
-
-
-    
 }
 
 
@@ -113,9 +108,7 @@ function displayLists() {
         }
         
         clear.addEventListener('click', clearAll);
-        
     }
-
 }
 
 
@@ -174,9 +167,6 @@ editText = (index) => {
        displayLists();
     })
 
-
-    
-
     saveButton.addEventListener('click', function(){
         let listItems = JSON.parse(localStorage.getItem('listItems'));
         taskLists.splice(index, 1, inputEdit[index].value)
@@ -184,12 +174,7 @@ editText = (index) => {
         localStorage.setItem('listItems', JSON.stringify(taskLists));
         displayLists();
     });
-
- 
-
 }
-
-
 
 displayLists();
 
