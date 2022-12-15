@@ -1,3 +1,5 @@
+console.log('Hello!, I am Lakan Santos. Welcome to my to-do list project!')
+
 let buttons = document.querySelectorAll('button');
 let add = buttons[0];
 let input = document.querySelector('input');
