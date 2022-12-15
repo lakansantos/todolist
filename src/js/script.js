@@ -48,11 +48,13 @@ function addItem(){
         task.innerText = 'Limited to 20 tasks only';
         task.style.color = 'red'
         task.style.animation = 'shake .5s  ease-in'
+
         setTimeout(() =>{
             task.innerText = 'Add new task:'
             task.style.color = 'white';
             task.style.animation = 'none'
         }, 1500)
+
     }
 
     
@@ -60,7 +62,8 @@ function addItem(){
 
     if(listItems === null){
         taskLists = [];
-    } else{
+    } 
+    else{
         taskLists = listItems
     }
 }
