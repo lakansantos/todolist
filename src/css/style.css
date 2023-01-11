@@ -168,6 +168,8 @@ input[type=text].editInput:focus{
 }
 .item{
     margin-left: 20px;
+    height: fit-content;
+    max-width: 440px;
 }
 
 .itemContainer:hover{
