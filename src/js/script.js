@@ -46,8 +46,8 @@ function addItem(){
 
    
 
-    if(taskLists.length === 20){
-        task.innerText = 'Limited to 20 tasks only';
+    if(taskLists.length === 50){
+        task.innerText = 'Limited to 50 tasks only';
         task.style.color = 'red'
         task.style.animation = 'shake .5s  ease-in'
 
