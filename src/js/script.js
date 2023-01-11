@@ -37,7 +37,7 @@ input.addEventListener('keydown', e=>{
 function addItem(){
     val = input.value;
 
-    if(val.trim() !== '' && val !== undefined && val !== null && taskLists.length < 20){
+    if(val.trim() !== '' && val !== undefined && val !== null && taskLists.length < 50){
         
     taskLists.push(val);
 
