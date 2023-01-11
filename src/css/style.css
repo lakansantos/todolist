@@ -132,7 +132,7 @@ input[type=text].editInput:focus{
     background: white;
 }
 #saveButton{
-    background: red;
+    background: #e74c3c;
     color: white;
 }
 .taskHeaderText{
